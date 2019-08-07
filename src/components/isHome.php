@@ -10,12 +10,14 @@ class isHome extends Component {
 
     public function init() {
         parent::init();
-        $this->url = \Yii::$app->homeUrl;
+        $this->url = Url::current();
     }
-    public function check($url) {
-        return Url::home() === ($url ? $url : $this->url) ? true : false;
+    public function check($url = NULL) {
+        return (Url::home() === (!is_null($url) ? $url : $this->url)) ? true : false;
     }
     public function __toString() {
-        return  ((Url::home() === \Yii::$app->homeUrl) && (Url::home() === Url::toRoute(\Yii::$app->controller->id.DIRECTORY_SEPARATOR.\Yii::$app->controller->action->id))) ? '1' : '0';
+        $controller         = Yii::$app->controller;
+        $default_controller = Yii::$app->defaultRoute;
+        return  (($controller->id === $default_controller) && ($controller->action->id === $controller->defaultAction)) ? 'home' : '';
     }
 }

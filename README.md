@@ -1,6 +1,6 @@
 Yii2 IsHome page checker
 ========================
-Simple Yii2 copmonent to check isHome no w or not. Or by url.
+Simple Yii2 component to check isHome no w or not. Or by url.
 
 Installation
 ------------

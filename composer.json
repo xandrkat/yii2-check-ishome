@@ -1,6 +1,6 @@
 {
     "name": "xandrkat/yii2-check-ishome",
-    "description": "Simple Yii2 copmonent to check isHome no w or not. Or by url.",
+    "description": "Simple Yii2 component to check isHome no w or not. Or by url.",
     "type": "yii2-extension",
     "keywords": ["yii2","extension","yii2-component","component","simple","usage","simple-usage"],
     "license": "BSD-3-Clause",

@@ -1,0 +1,27 @@
+{
+    "name": "xandrkat/yii2-check-ishome",
+    "description": "Simple Yii2 copmonent to check isHome no w or not. Or by url.",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","yii2-component","component","simple","usage","simple-usage"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Alexandr Katrazhenko",
+            "email": "katrazhenko@gmail.com",
+			"homepage": "https://katrazhenko.top/"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "xandrkat\\homepagecheker\\": "src\\components\\"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "dev-master"
+        }
+    }
+}

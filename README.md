@@ -42,11 +42,11 @@ Then use any do you want) As Simple, currnet url:
  !!!!Atention!!! without (bool) or (int) we give ups are string ('1/'0')!!!!!!:
 
 ```php
-<?php var_dunp((bool)Yii::$app->isHome) ?> //- true/false will be returned
+<?php var_dump((bool)Yii::$app->isHome) ?> //- true/false will be returned
 
 bool(true/false)
 
-<?php var_dunp((int)Yii::$app->isHome)?> //-  1/0 will be returned
+<?php var_dump((int)Yii::$app->isHome)?> //-  1/0 will be returned
 int(1/0)
 ```
 As url(returned bool(true/false)):
@@ -55,7 +55,7 @@ As url(returned bool(true/false)):
 <?php
 use yii\helpers\Url;
 ?>
-<?php var_dunp((Yii::$app->isHome->check(Url::to('any'))); ?> //- true/false will be returned
+<?php var_dump((Yii::$app->isHome->check(Url::to('any'))); ?> //- true/false will be returned
 
 bool(true/false)
 ```
